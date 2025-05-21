@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "enter a no:"
+read num
+n=$num
+result=0
+if [ $num -ge 1000 -a $num -le 9999 ]
+then
+while [ $num -ne 0 ]
+do
+result=`expr $result "*" 10`
+lastdigit=`expr $num % 10`
+result=`expr $result + $lastdigit`
+num=`expr $num / 10`
+done
+echo "reverse of $n: $result"
+else
+echo "invalid input"
+echo "try again"
+fi
