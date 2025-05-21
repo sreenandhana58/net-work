@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "enter no1:"
+read a
+echo "enter no2:"
+read b
+echo "Basic Arithmetic operations using Function:...."
+arithmetic(){
+add=$(( a + b ))
+sub=$(( a - b ))
+pro=$(( a * b ))
+div=$(( a / b ))
+mod=$(( a % b ))
+echo "$a + $b= $add"
+echo "$a - $b= $sub"
+echo "$a X $b= $pro"
+echo "$a / $b= $div"
+echo "$a % $b= $mod"
+}
+arithmetic
